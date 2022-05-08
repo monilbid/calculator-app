@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-white)
+}
+
+:root {
+  --color-digit-background: #666666;
+  --color-digit-background-hover: #3c3c3c;
+  --color-digit-background-active: #232323;
+  --color-sign-background: #e59111;
+  --color-sign-background-hover: #a6690c;
+  --color-sign-background-active: #7e4f09;
+  --color-sign-background-active-ongoing-calculation: #43b053;
+  --color-screen-background: #2d2b2b;
+  --color-white: #FFFFFF;
+}
+
+.calculator {
+  background-color: black;
+  height: 100vh;
+}
+
+.screen-row {
+  display: flex;
+  justify-content: center;
+}
+
+.screen {
+  width: 450px;
+  background-color: var(--color-screen-background);
+  font-size: 5rem;
+  height: 100px;
+  line-height: 110px;
+  text-align: right;
+  padding-right: 20px;
+  margin: 10px 10px;
+  border-radius: 50px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.cell {
+  font-size: 3rem;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.digit {
+  background-color: var(--color-digit-background);
+  
+  &:hover {
+    background-color: var(--color-digit-background-hover);
+  }
+
+  &:active {
+    background-color: var(--color-digit-background-active);
+  }
+}
+
+.sign {
+  background-color: var(--color-sign-background);
+
+  &:hover {
+    background-color: var(--color-sign-background-hover);
+  }
+
+  &:active {
+    background-color: var(--color-sign-background-active);
+  }
+}
+
+.active-calculation {
+  background-color: var(--color-sign-background-active-ongoing-calculation);
+}
+
+@media only screen and (max-width: 600px) {
+
+  .calculator {
+    width: auto;
+  }
+
+  .screen {
+    height: 75px;
+    line-height: 75px;
+    font-size: 3rem;
+  }
+
+  .cell {
+    height: 75px;
+    width: 75px;
+    line-height: 75px;
+  }
+
+  .double-cell {
+    width: 157.7px;
+    height: 75px;
+    line-height: 75px;
+  }
+}

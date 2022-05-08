@@ -1,0 +1,48 @@
+.calculator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.memory-container {
+  border: 1px solid black;
+}
+
+.screen-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.screen {
+  width: 220px;
+  height: 30px;
+  background-color: #AAAAAA;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.button {
+  background-color: #DDDDDD;
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  line-height: 15px;
+}
+
+.button:hover {
+  background-color: #CCCCCC;
+}
+
+.button:active {
+  background-color: #BBBBBB;
+}
+/*# sourceMappingURL=style.css.map */
